@@ -20,10 +20,12 @@ Primero, clona el repositorio desde GitHub a tu máquina local. Abre una termina
 ```bash
 git clone https://github.com/Adrian12348/capi_examen_back.git
 ```
-Instalar dependencias 
+### 2. Instalar dependencias 
+```
 composer install
-
-Configuración del Archivo .env
+```
+### 3. Configuración del Archivo .env
+```
 cp .env.example .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -31,13 +33,17 @@ DB_PORT=3306
 DB_DATABASE=nombre_de_tu_base_de_datos
 DB_USERNAME=tu_usuario
 DB_PASSWORD=tu_contraseña
-
-Generar Clave de Aplicación
+```
+### 4. Generar Clave de Aplicación
+```
 php artisan key:generate
-
-Migraciones y Seeders
+```
+### 5. Migraciones y Seeders
+```
 php artisan migrate
 php artisan db:seed
-
-Iniciar el Servidor de Desarrollo
+```
+### 6. Iniciar el Servidor de Desarrollo
+```
 php artisan serve
+```
